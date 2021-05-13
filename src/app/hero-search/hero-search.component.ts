@@ -37,4 +37,8 @@ export class HeroSearchComponent implements OnInit {
       switchMap((term: string) => this.heroService.searchHeroes(term)),
     );
   }
+
+  get searchTermsP() {
+    return this.searchTerms;
+  }
 }
